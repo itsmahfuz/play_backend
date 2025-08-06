@@ -1,4 +1,4 @@
-package com.itsmahfuz.play_backend.repository;
+package com.itsmahfuz.playbackend.repository;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "Test_table")
+@Table(name = "experience")
 @Data
 public class TestEntity {
 
@@ -15,15 +15,15 @@ public class TestEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String exp2;
+    private String exp;
 
-    private LocalDateTime exp1Validity;
+    private LocalDateTime expValidity;
 
     @PrePersist
     public void prePersist() {
-        exp2 = UUID.randomUUID().toString();
-        if (exp1Validity == null) {
-            exp1Validity = LocalDateTime.now();
+        exp = UUID.randomUUID().toString();
+        if (expValidity == null) {
+            expValidity = LocalDateTime.now();
         }
     }
 

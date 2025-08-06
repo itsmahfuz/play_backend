@@ -1,4 +1,4 @@
-package com.itsmahfuz.play_backend;
+package com.itsmahfuz.playbackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

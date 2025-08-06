@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.itsmahfuz</groupId>
-	<artifactId>play-backend</artifactId>
+	<artifactId>playbackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>play-backend</name>
+	<name>playbackend</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

@@ -1,4 +1,4 @@
-package com.itsmahfuz.play_backend.infrastructure.config;
+package com.itsmahfuz.playbackend.infrastructure.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.config.CorsRegistry;
