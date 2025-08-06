@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 8090
 
 spring:
   datasource:
@@ -17,6 +17,15 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: pqenirob@gmail.com
+    password: vjps ouwr grbb klet
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
 
 
 
