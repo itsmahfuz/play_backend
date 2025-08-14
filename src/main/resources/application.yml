@@ -18,14 +18,18 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: pqenirob@gmail.com
-    password: vjps ouwr grbb klet
-    properties:
-      mail.smtp.auth: true
-      mail.smtp.starttls.enable: true
+# Uncomment this only if you use Spring Mail (SMTP), not Resend API
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: pqenirob@gmail.com
+#    password: "vjps ouwr grbb klet"
+#    properties:
+#      mail.smtp.auth: true
+#      mail.smtp.starttls.enable: true
 
+resend:
+  api-key: "re_RHkuCprs_Esoes5TRockAH7s3sv4wq25z"
 
-
+email:
+  from: "itsmahfuz.com.au"
