@@ -19,7 +19,7 @@ public class ExperienceDto {
 
     private String userThought;
 
-    private long expVersion = 1;
+    private long expVersion = 2;
 
     private String currentExp;
 
