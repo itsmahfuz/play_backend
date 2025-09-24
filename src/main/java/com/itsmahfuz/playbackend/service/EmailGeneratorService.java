@@ -29,8 +29,22 @@ public class EmailGeneratorService {
             CreateEmailOptions sendEmailRequest = CreateEmailOptions.builder()
                     .from("Experience2 <no-reply@send.xn--u8j2c021jhz8agu9a.com>")
                     .to(request.getToEmail())
-                    .subject("hello world")
-                    .html("<p>it works!</p>")
+                    .subject("Your Next Experience Awaits")
+                    .html(
+                            "<div style='font-family: Arial, sans-serif; line-height:1.6; color:#333;'>" +
+                                    "<p>Something opened in you.<br/>" +
+                                    "Something softened.</p>" +
+
+                                    "<p>And now, the next step is waiting.</p>" +
+
+                                    "<p><strong>Yes, send me the link to Experience Two:</strong><br/>" +
+                                    "<a href='{{EX2_LINK}}' " +
+                                    "style='color:#2563eb; text-decoration:none; font-weight:bold;'>Open Experience Two</a>" +
+                                    "</p>" +
+
+                                    "<p style='font-size: 12px; color:#666;'>The link expires in 7 days, so please open it soon.</p>" +
+                                    "</div>"
+                    )
                     .build();
 
             CreateEmailResponse data = resend.emails().send(sendEmailRequest);
